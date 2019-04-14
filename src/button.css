@@ -1,0 +1,39 @@
+.button--primary {
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+.button--secondary {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.button--tertiary {
+  background-color: yellow;
+  color: white;
+  border: none;
+}
+
+button:disabled {
+  background-color: gray;
+}
+
+.button--small {
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+}
+
+.button--medium {
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.button--large {
+  width: 150px;
+  height: 60px;
+  font-size: 24px;
+}
