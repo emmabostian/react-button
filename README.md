@@ -29,3 +29,16 @@ You can view the live site [here](react-button.netlify.com).
 | `ButtonSizes`   | `SMALL` `MEDIUM` `LARGE`         | `MEDIUM`     |
 | `ButtonThemes`  | `LIGHT` `DARK`                   | `LIGHT `     |
 | `ButtonTypes`   | `PRIMARY` `SECONDARY` `TERTIARY` | `PRIMARY `   |
+| `IconTypes`     | `SAVE` `NONE`                    | `NONE `      |
+
+
+## Examples
+```jsx
+<Button
+  size={ButtonSizes.MEDIUM}
+  label="Button"
+  onClickHandler={() => alert("you clicked!")}
+  type={ButtonTypes.PRIMARY}
+  icon={IconTypes.SAVE}
+/>
+```
