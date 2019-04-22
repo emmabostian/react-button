@@ -33,6 +33,9 @@ You can view the live site [here](react-button.netlify.com).
 
 
 ## Examples
+
+### Light Theme
+
 <img width="191" alt="image" src="https://user-images.githubusercontent.com/7671983/56490687-4dadc400-64e6-11e9-90a6-4378df36af9d.png">
 
 ```jsx
@@ -44,6 +47,8 @@ You can view the live site [here](react-button.netlify.com).
   icon={IconTypes.SAVE}
 />
 ```
+
+### Dark Theme
 
 <img width="195" alt="image" src="https://user-images.githubusercontent.com/7671983/56490717-6e761980-64e6-11e9-907e-8bc6277d8e64.png">
 
