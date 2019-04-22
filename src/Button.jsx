@@ -46,13 +46,13 @@ export default class Button extends Component {
   }
 }
 Button.propTypes = {
-  type: PropTypes.string,
+  type: PropTypes.instanceOf(ButtonTypes),
   disabled: PropTypes.bool,
   onClickHandler: PropTypes.func.isRequired,
   label: PropTypes.string.isRequired,
-  size: PropTypes.string,
-  theme: PropTypes.string,
-  icon: PropTypes.string
+  size: PropTypes.instanceOf(ButtonSizes),
+  theme: PropTypes.instanceOf(ButtonThemes),
+  icon: PropTypes.instanceOf(IconTypes)
 };
 
 Button.defaultProps = {
