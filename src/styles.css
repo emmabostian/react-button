@@ -7,6 +7,6 @@
   align-items: center;
 }
 
-.light {
+.dark {
   background: var(--primary-color);
 }

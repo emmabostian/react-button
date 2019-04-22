@@ -85,11 +85,11 @@ function App() {
         />
       </div>
 
-      <div className="App light">
+      <div className="App dark">
         <Button
           size={ButtonSizes.MEDIUM}
           label="Button"
-          theme={ButtonThemes.LIGHT}
+          theme={ButtonThemes.DARK}
           onClickHandler={() => alert("you clicked!")}
           type={ButtonTypes.PRIMARY}
         />
@@ -99,12 +99,12 @@ function App() {
           onClickHandler={() => alert("you clicked!")}
           type={ButtonTypes.PRIMARY}
           icon={IconTypes.SAVE}
-          theme={ButtonThemes.LIGHT}
+          theme={ButtonThemes.DARK}
         />
         <Button
           size={ButtonSizes.MEDIUM}
           label="Button"
-          theme={ButtonThemes.LIGHT}
+          theme={ButtonThemes.DARK}
           onClickHandler={() => alert("you clicked!")}
           type={ButtonTypes.PRIMARY}
           disabled
@@ -113,7 +113,7 @@ function App() {
         <Button
           size={ButtonSizes.MEDIUM}
           label="Button"
-          theme={ButtonThemes.LIGHT}
+          theme={ButtonThemes.DARK}
           onClickHandler={() => alert("you clicked!")}
           type={ButtonTypes.SECONDARY}
         />
@@ -121,7 +121,7 @@ function App() {
         <Button
           size={ButtonSizes.MEDIUM}
           label="Button"
-          theme={ButtonThemes.LIGHT}
+          theme={ButtonThemes.DARK}
           onClickHandler={() => alert("you clicked!")}
           type={ButtonTypes.SECONDARY}
           disabled
@@ -130,7 +130,7 @@ function App() {
         <Button
           size={ButtonSizes.MEDIUM}
           label="Button"
-          theme={ButtonThemes.LIGHT}
+          theme={ButtonThemes.DARK}
           onClickHandler={() => alert("you clicked!")}
           type={ButtonTypes.TERTIARY}
         />
@@ -138,7 +138,7 @@ function App() {
         <Button
           size={ButtonSizes.MEDIUM}
           label="Button"
-          theme={ButtonThemes.LIGHT}
+          theme={ButtonThemes.DARK}
           onClickHandler={() => alert("you clicked!")}
           type={ButtonTypes.TERTIARY}
           disabled
@@ -147,7 +147,7 @@ function App() {
         <Button
           size={ButtonSizes.SMALL}
           label="Button"
-          theme={ButtonThemes.LIGHT}
+          theme={ButtonThemes.DARK}
           onClickHandler={() => alert("you clicked!")}
           type={ButtonTypes.PRIMARY}
         />
@@ -155,7 +155,7 @@ function App() {
         <Button
           size={ButtonSizes.LARGE}
           label="Button"
-          theme={ButtonThemes.LIGHT}
+          theme={ButtonThemes.DARK}
           onClickHandler={() => alert("you clicked!")}
           type={ButtonTypes.PRIMARY}
         />
@@ -163,7 +163,7 @@ function App() {
         <Button
           size={ButtonSizes.LARGE}
           label="Button"
-          theme={ButtonThemes.LIGHT}
+          theme={ButtonThemes.DARK}
           onClickHandler={() => alert("you clicked!")}
           type={ButtonTypes.SECONDARY}
         />

@@ -61,6 +61,6 @@ Button.defaultProps = {
   label: "",
   disabled: false,
   size: ButtonSizes.MEDIUM,
-  theme: ButtonThemes.DARK,
+  theme: ButtonThemes.LIGHT,
   icon: null
 };

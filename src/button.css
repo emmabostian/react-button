@@ -1,13 +1,13 @@
 .button {
-  --color-primary-dark: #030086;
-  --color-secondary-dark: #0804b8;
-  --color-disabled-dark: #9b9b9b;
+  --color-primary-light: #030086;
+  --color-secondary-light: #0804b8;
+  --color-disabled-light: #9b9b9b;
 
-  --color-primary-light: #fff;
-  --color-secondary-light: #dfdeff;
-  --color-text-light: var(--color-primary-dark);
-  --color-disabled-light: #d9d8d9;
-  --color-disabled-text-light: #4a4a4a;
+  --color-primary-dark: #fff;
+  --color-secondary-dark: #dfdeff;
+  --color-text-dark: var(--color-primary-light);
+  --color-disabled-dark: #d9d8d9;
+  --color-disabled-text-dark: #4a4a4a;
 
   --color-white: #fff;
   --font-family: "Lucida Console", Monaco, monospace;
@@ -76,67 +76,15 @@
   margin: 0px 10px 0px 0px;
 }
 
-/* Dark Theme Button Styles */
-
-.button--dark.button--primary {
-  background-color: var(--color-primary-dark);
-  color: var(--color-white);
-}
-
-.button--dark .button__icon > path {
-  fill: var(--color-white);
-}
-
-.button--dark.button--primary:hover,
-.button--dark.button--primary:focus {
-  background-color: var(--color-secondary-dark);
-}
-
-.button--dark.button--secondary {
-  color: var(--color-primary-dark);
-  border: 2px solid var(--color-primary-dark);
-}
-
-.button--dark.button--secondary:hover,
-.button--dark.button--secondary:focus {
-  color: var(--color-white);
-  border: 2px solid var(--color-secondary-dark);
-  background: var(--color-secondary-dark);
-}
-
-.button--dark.button--tertiary {
-  color: var(--color-primary-dark);
-}
-
-.button--dark.button--tertiary:hover,
-.button--dark.button--tertiary:focus {
-  border-bottom: 2px solid var(--color-primary-dark);
-}
-
-.button--dark.button--primary:disabled,
-.button--dark.button--primary:disabled:hover,
-.button--dark.button--primary:disabled:focus {
-  background-color: var(--color-disabled-dark);
-}
-
-.button--dark.button--secondary:disabled,
-.button--dark.button--secondary:disabled:hover,
-.button--dark.button--secondary:disabled:focus {
-  border: 2px solid var(--color-disabled-dark);
-  color: var(--color-disabled-dark);
-}
-
-.button--dark.button--tertiary:disabled,
-.button--dark.button--tertiary:disabled:hover,
-.button--dark.button--tertiary:disabled:focus {
-  color: var(--color-disabled-dark);
-}
-
 /* Light Theme Button Styles */
 
 .button--light.button--primary {
   background-color: var(--color-primary-light);
-  color: var(--color-text-light);
+  color: var(--color-white);
+}
+
+.button--light .button__icon > path {
+  fill: var(--color-white);
 }
 
 .button--light.button--primary:hover,
@@ -151,7 +99,7 @@
 
 .button--light.button--secondary:hover,
 .button--light.button--secondary:focus {
-  color: var(--color-text-light);
+  color: var(--color-white);
   border: 2px solid var(--color-secondary-light);
   background: var(--color-secondary-light);
 }
@@ -184,8 +132,60 @@
   color: var(--color-disabled-light);
 }
 
-.button--light .button__icon > path {
-  fill: var(--color-text-light);
+/* Dark Theme Button Styles */
+
+.button--dark.button--primary {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-dark);
+}
+
+.button--dark.button--primary:hover,
+.button--dark.button--primary:focus {
+  background-color: var(--color-secondary-dark);
+}
+
+.button--dark.button--secondary {
+  color: var(--color-primary-dark);
+  border: 2px solid var(--color-primary-dark);
+}
+
+.button--dark.button--secondary:hover,
+.button--dark.button--secondary:focus {
+  color: var(--color-text-dark);
+  border: 2px solid var(--color-secondary-dark);
+  background: var(--color-secondary-dark);
+}
+
+.button--dark.button--tertiary {
+  color: var(--color-primary-dark);
+}
+
+.button--dark.button--tertiary:hover,
+.button--dark.button--tertiary:focus {
+  border-bottom: 2px solid var(--color-primary-dark);
+}
+
+.button--dark.button--primary:disabled,
+.button--dark.button--primary:disabled:hover,
+.button--dark.button--primary:disabled:focus {
+  background-color: var(--color-disabled-dark);
+}
+
+.button--dark.button--secondary:disabled,
+.button--dark.button--secondary:disabled:hover,
+.button--dark.button--secondary:disabled:focus {
+  border: 2px solid var(--color-disabled-dark);
+  color: var(--color-disabled-dark);
+}
+
+.button--dark.button--tertiary:disabled,
+.button--dark.button--tertiary:disabled:hover,
+.button--dark.button--tertiary:disabled:focus {
+  color: var(--color-disabled-dark);
+}
+
+.button--dark .button__icon > path {
+  fill: var(--color-text-dark);
 }
 
 /* Button Size Styles */
