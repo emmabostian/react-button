@@ -14,7 +14,7 @@ You can view the live site [here](react-button.netlify.com).
 
 ## Properties
 | Property        | Description                        | Type          | Required   |
-| -------------   | :----------------------------------| :------------ | :--------- |
+| :------------   | :----------------------------------| :------------ | :--------- |
 | `disabled`      | Sets the button to a disabled state| `boolean`     | false      |
 | `icon    `      | Adds an icon to the button         | `IconType`    | false      |
 | `label    `     | The button text                    | `string`      | true       |
@@ -25,7 +25,7 @@ You can view the live site [here](react-button.netlify.com).
 
 ## Types
 | Type            | Values                           | Default      |
-| -------------   | :--------------------------------| :----------- |
+| :------------   | :--------------------------------| :----------- |
 | `ButtonSizes`   | `SMALL` `MEDIUM` `LARGE`         | `MEDIUM`     |
 | `ButtonThemes`  | `LIGHT` `DARK`                   | `LIGHT `     |
 | `ButtonTypes`   | `PRIMARY` `SECONDARY` `TERTIARY` | `PRIMARY `   |
