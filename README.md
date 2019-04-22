@@ -44,3 +44,27 @@ You can view the live site [here](react-button.netlify.com).
   icon={IconTypes.SAVE}
 />
 ```
+
+<img width="195" alt="image" src="https://user-images.githubusercontent.com/7671983/56490717-6e761980-64e6-11e9-907e-8bc6277d8e64.png">
+
+```jsx
+<Button
+  size={ButtonSizes.MEDIUM}
+  label="Button"
+  theme={ButtonThemes.DARK}
+  onClickHandler={() => alert("you clicked!")}
+  type={ButtonTypes.SECONDARY}
+/>
+```
+
+<img width="136" alt="image" src="https://user-images.githubusercontent.com/7671983/56490782-a67d5c80-64e6-11e9-9a93-95607b1be421.png">
+
+```jsx
+<Button
+  size={ButtonSizes.SMALL}
+  label="Button"
+  theme={ButtonThemes.DARK}
+  onClickHandler={() => alert("you clicked!")}
+  type={ButtonTypes.PRIMARY}
+/>
+```
