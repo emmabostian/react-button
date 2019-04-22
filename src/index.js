@@ -1,19 +1,174 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import { ButtonThemes, ButtonTypes, ButtonSizes } from "./buttonTypes";
+import { IconTypes } from "./IconTypes";
+
 import Button from "./Button";
 
 import "./styles.css";
 
 function App() {
   return (
-    <div className="App">
-      <Button
-        size="large"
-        label="My button"
-        onClickHandler={() => alert("you clicked!")}
-      />
-    </div>
+    <React.Fragment>
+      <div className="App">
+        <Button
+          size={ButtonSizes.MEDIUM}
+          label="Button"
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.PRIMARY}
+        />
+        <Button
+          size={ButtonSizes.MEDIUM}
+          label="Button"
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.PRIMARY}
+          icon={IconTypes.SAVE}
+        />
+        <Button
+          size={ButtonSizes.MEDIUM}
+          label="Button"
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.PRIMARY}
+          disabled
+        />
+
+        <Button
+          size={ButtonSizes.MEDIUM}
+          label="Button"
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.SECONDARY}
+        />
+
+        <Button
+          size={ButtonSizes.MEDIUM}
+          label="Button"
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.SECONDARY}
+          disabled
+        />
+
+        <Button
+          size={ButtonSizes.MEDIUM}
+          label="Button"
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.TERTIARY}
+        />
+
+        <Button
+          size={ButtonSizes.MEDIUM}
+          label="Button"
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.TERTIARY}
+          disabled
+        />
+
+        <Button
+          size={ButtonSizes.SMALL}
+          label="Button"
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.PRIMARY}
+        />
+
+        <Button
+          size={ButtonSizes.LARGE}
+          label="Button"
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.PRIMARY}
+        />
+
+        <Button
+          size={ButtonSizes.LARGE}
+          label="Button"
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.SECONDARY}
+        />
+      </div>
+
+      <div className="App light">
+        <Button
+          size={ButtonSizes.MEDIUM}
+          label="Button"
+          theme={ButtonThemes.LIGHT}
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.PRIMARY}
+        />
+        <Button
+          size={ButtonSizes.MEDIUM}
+          label="Button"
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.PRIMARY}
+          icon={IconTypes.SAVE}
+          theme={ButtonThemes.LIGHT}
+        />
+        <Button
+          size={ButtonSizes.MEDIUM}
+          label="Button"
+          theme={ButtonThemes.LIGHT}
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.PRIMARY}
+          disabled
+        />
+
+        <Button
+          size={ButtonSizes.MEDIUM}
+          label="Button"
+          theme={ButtonThemes.LIGHT}
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.SECONDARY}
+        />
+
+        <Button
+          size={ButtonSizes.MEDIUM}
+          label="Button"
+          theme={ButtonThemes.LIGHT}
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.SECONDARY}
+          disabled
+        />
+
+        <Button
+          size={ButtonSizes.MEDIUM}
+          label="Button"
+          theme={ButtonThemes.LIGHT}
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.TERTIARY}
+        />
+
+        <Button
+          size={ButtonSizes.MEDIUM}
+          label="Button"
+          theme={ButtonThemes.LIGHT}
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.TERTIARY}
+          disabled
+        />
+
+        <Button
+          size={ButtonSizes.SMALL}
+          label="Button"
+          theme={ButtonThemes.LIGHT}
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.PRIMARY}
+        />
+
+        <Button
+          size={ButtonSizes.LARGE}
+          label="Button"
+          theme={ButtonThemes.LIGHT}
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.PRIMARY}
+        />
+
+        <Button
+          size={ButtonSizes.LARGE}
+          label="Button"
+          theme={ButtonThemes.LIGHT}
+          onClickHandler={() => alert("you clicked!")}
+          type={ButtonTypes.SECONDARY}
+        />
+      </div>
+    </React.Fragment>
   );
 }
 

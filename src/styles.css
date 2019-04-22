@@ -1,4 +1,12 @@
 .App {
-  font-family: sans-serif;
+  --primary-color: #030086;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.light {
+  background: var(--primary-color);
 }

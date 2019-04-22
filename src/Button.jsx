@@ -1,50 +1,45 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
+import { ButtonTypes, ButtonSizes, ButtonThemes } from "./buttonTypes";
+import { IconTypes } from "./IconTypes";
+import * as Icons from "./Icons";
+
 import "./button.css";
 
-const ButtonTypes = {
-  PRIMARY: "primary",
-  SECONDARY: "secondary",
-  TERTIARY: "tertiary"
-};
-
-const ButtonSizes = {
-  SMALL: "small",
-  MEDIUM: "medium",
-  LARGE: "large"
-};
-
-const ButtonThemes = {
-  LIGHT: "light",
-  DARK: "dark"
-};
-
-const ButtonStatuses = {
-  WARNING: "warning",
-  NONE: "none"
-};
-
 export default class Button extends Component {
+  getButtonIcon() {
+    switch (this.props.icon) {
+      case IconTypes.SAVE:
+        return <Icons.SaveIcon />;
+
+      default:
+        return null;
+    }
+  }
+
+  getButtonClasses() {
+    const { icon, size, theme, type } = this.props;
+    const buttonClasses = [
+      "button",
+      `button--${size}`,
+      `button--${theme}`,
+      `button--${type}`
+    ];
+
+    icon && buttonClasses.push("button--icon");
+
+    return buttonClasses.join(" ");
+  }
   render() {
-    const {
-      type,
-      disabled,
-      onClickHandler,
-      label,
-      size,
-      theme,
-      icon,
-      status,
-      loading
-    } = this.props;
+    const { disabled, onClickHandler, label, icon } = this.props;
     return (
       <button
-        className={`button button--${type} button--${size}`}
+        className={this.getButtonClasses()}
         onClick={event => onClickHandler(event.target)}
         disabled={disabled}
       >
-        {icon && <h1>Icon goes here</h1>}
+        {icon && this.getButtonIcon()}
         {label}
       </button>
     );
@@ -57,9 +52,7 @@ Button.propTypes = {
   label: PropTypes.string.isRequired,
   size: PropTypes.string,
   theme: PropTypes.string,
-  icon: PropTypes.string,
-  status: PropTypes.string,
-  loading: PropTypes.bool
+  icon: PropTypes.string
 };
 
 Button.defaultProps = {
@@ -68,8 +61,6 @@ Button.defaultProps = {
   label: "",
   disabled: false,
   size: ButtonSizes.MEDIUM,
-  theme: ButtonThemes.LIGHT,
-  icon: null,
-  status: ButtonStatuses.NONE,
-  loading: false
+  theme: ButtonThemes.DARK,
+  icon: null
 };
