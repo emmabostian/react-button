@@ -8,6 +8,11 @@ import * as Icons from "./Icons";
 import "./button.css";
 
 export default class Button extends Component {
+  constructor(props) {
+    super(props);
+
+    this.getButtonClasses = this.getButtonClasses.bind(this);
+  }
   getButtonIcon() {
     switch (this.props.icon) {
       case IconTypes.SAVE:
