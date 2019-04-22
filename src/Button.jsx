@@ -27,7 +27,7 @@ export default class Button extends Component {
       `button--${type}`
     ];
 
-    icon && buttonClasses.push("button--icon");
+    icon && icon !== IconTypes.NONE && buttonClasses.push("button--icon");
 
     return buttonClasses.join(" ");
   }
@@ -62,5 +62,5 @@ Button.defaultProps = {
   disabled: false,
   size: ButtonSizes.MEDIUM,
   theme: ButtonThemes.LIGHT,
-  icon: null
+  icon: IconTypes.NONE
 };
