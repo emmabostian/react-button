@@ -1,16 +1,16 @@
-export const ButtonTypes = {
+export const ButtonTypes = Object.freeze({
   PRIMARY: "primary",
   SECONDARY: "secondary",
   TERTIARY: "tertiary"
-};
+});
 
-export const ButtonSizes = {
+export const ButtonSizes = Object.freeze({
   SMALL: "small",
   MEDIUM: "medium",
   LARGE: "large"
-};
+});
 
-export const ButtonThemes = {
+export const ButtonThemes = Object.freeze({
   LIGHT: "light",
   DARK: "dark"
-};
+});

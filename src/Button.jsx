@@ -2,27 +2,12 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 import { ButtonTypes, ButtonSizes, ButtonThemes } from "./buttonTypes";
-import { IconTypes } from "./IconTypes";
-import * as Icons from "./Icons";
+import { IconTypes } from "./iconTypes";
+import Icon from "./Icons";
 
 import "./button.css";
 
 export default class Button extends Component {
-  constructor(props) {
-    super(props);
-
-    this.getButtonClasses = this.getButtonClasses.bind(this);
-  }
-  getButtonIcon() {
-    switch (this.props.icon) {
-      case IconTypes.SAVE:
-        return <Icons.SaveIcon />;
-
-      default:
-        return null;
-    }
-  }
-
   getButtonClasses() {
     const { icon, size, theme, type } = this.props;
     const buttonClasses = [
@@ -44,20 +29,20 @@ export default class Button extends Component {
         onClick={event => onClickHandler(event.target)}
         disabled={disabled}
       >
-        {icon && this.getButtonIcon()}
+        {icon && <Icon icon={icon} />}
         {label}
       </button>
     );
   }
 }
 Button.propTypes = {
-  type: PropTypes.instanceOf(ButtonTypes),
+  type: PropTypes.oneOf(Object.values(ButtonTypes)),
   disabled: PropTypes.bool,
   onClickHandler: PropTypes.func.isRequired,
   label: PropTypes.string.isRequired,
-  size: PropTypes.instanceOf(ButtonSizes),
-  theme: PropTypes.instanceOf(ButtonThemes),
-  icon: PropTypes.instanceOf(IconTypes)
+  size: PropTypes.oneOf(Object.values(ButtonSizes)),
+  theme: PropTypes.oneOf(Object.values(ButtonThemes)),
+  icon: PropTypes.oneOf(Object.values(IconTypes))
 };
 
 Button.defaultProps = {

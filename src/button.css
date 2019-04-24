@@ -19,7 +19,7 @@
   margin: 10px 0px;
   cursor: pointer;
   transition: background-color 0.1s linear, color 0.1s linear,
-    border 0.1s linear;
+    border 0.1s linear, outline 0.1s linear;
 }
 
 /* Main Button Styles */
@@ -92,6 +92,12 @@
   background-color: var(--color-secondary-light);
 }
 
+.button--light.button--primary:focus,
+.button--light.button--secondary:focus {
+  outline: 2px solid var(--color-secondary-light);
+  outline-offset: 4px;
+}
+
 .button--light.button--secondary {
   color: var(--color-primary-light);
   border: 2px solid var(--color-primary-light);
@@ -154,6 +160,12 @@
   color: var(--color-text-dark);
   border: 2px solid var(--color-secondary-dark);
   background: var(--color-secondary-dark);
+}
+
+.button--dark.button--primary:focus,
+.button--dark.button--secondary:focus {
+  outline: 2px solid var(--color-secondary-dark);
+  outline-offset: 4px;
 }
 
 .button--dark.button--tertiary {
