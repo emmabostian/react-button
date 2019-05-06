@@ -1,7 +1,7 @@
 # React Button
 This repository is the code demo from my "Building Design Systems With React" talk I will give at [ReactJS Girls London](https://reactjsgirls.com/#speakers). I will link the deck once the talk has been given.
 
-You can view the live site [here](react-button.netlify.com).
+You can view the live site [here](https://react-button.netlify.com).
 
 ## Design
 
