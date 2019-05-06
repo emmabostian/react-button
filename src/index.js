@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import { ButtonThemes, ButtonTypes, ButtonSizes } from "./buttonTypes";
-import { IconTypes } from "./iconTypes";
+import { IconTypes } from "./IconTypes";
 
 import Button from "./Button";
 
