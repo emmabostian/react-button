@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 import { ButtonTypes, ButtonSizes, ButtonThemes } from "./buttonTypes";
-import { IconTypes } from "./iconTypes";
+import { IconTypes } from "./IconTypes";
 import Icon from "./Icons";
 
 import "./button.css";

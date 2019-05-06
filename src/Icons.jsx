@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { IconTypes } from "./iconTypes";
+import { IconTypes } from "./IconTypes";
 const SaveIcon = () => {
   return (
     <svg
